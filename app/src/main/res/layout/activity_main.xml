@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity"
+    android:background="#ffb636">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TVinput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#010101"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="AC"
+        android:id="@+id/BTc"
+        android:layout_below="@+id/TVinput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#8e8e93"
+        android:textSize="24dp"
+        android:onClick="cancel" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="+/-"
+        android:id="@+id/BTpm"
+        android:layout_alignTop="@+id/BTc"
+        android:layout_toRightOf="@+id/BTc"
+        android:layout_toEndOf="@+id/BTc"
+        android:background="#8e8e93"
+        android:textSize="24dp"
+        android:onClick="get" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="%"
+        android:id="@+id/BTmod"
+        android:layout_alignTop="@+id/BTpm"
+        android:layout_toRightOf="@+id/BTpm"
+        android:layout_toEndOf="@+id/BTpm"
+        android:background="#8e8e93"
+        android:textSize="24dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="÷"
+        android:id="@+id/BTdiv"
+        android:layout_alignTop="@+id/BTmod"
+        android:layout_toRightOf="@+id/BTmod"
+        android:layout_toEndOf="@+id/BTmod"
+        android:background="#ff9500"
+        android:textSize="35dp"
+        android:textColor="#fff"
+        android:outlineProvider="bounds"
+        android:onClick="onClick"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="7"
+        android:id="@+id/BT7"
+        android:layout_below="@+id/BTc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="8"
+        android:id="@+id/BT8"
+        android:layout_below="@+id/BTpm"
+        android:layout_toRightOf="@+id/BT7"
+        android:layout_toEndOf="@+id/BT7"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="9"
+        android:id="@+id/BT9"
+        android:layout_alignBottom="@+id/BT8"
+        android:layout_toRightOf="@+id/BT8"
+        android:layout_toEndOf="@+id/BT8"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="4"
+        android:id="@+id/BT4"
+        android:layout_below="@+id/BT7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="5"
+        android:id="@+id/BT5"
+        android:layout_alignTop="@+id/BT4"
+        android:layout_alignLeft="@+id/BT8"
+        android:layout_alignStart="@+id/BT8"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="6"
+        android:id="@+id/BT6"
+        android:layout_below="@+id/BT9"
+        android:layout_alignLeft="@+id/BT9"
+        android:layout_alignStart="@+id/BT9"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="1"
+        android:id="@+id/BT1"
+        android:layout_below="@+id/BT4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="2"
+        android:id="@+id/BT2"
+        android:layout_alignBottom="@+id/BT1"
+        android:layout_alignLeft="@+id/BT5"
+        android:layout_alignStart="@+id/BT5"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="3"
+        android:id="@+id/BT3"
+        android:layout_alignBottom="@+id/BT2"
+        android:layout_alignLeft="@+id/BT6"
+        android:layout_alignStart="@+id/BT6"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="x"
+        android:id="@+id/BTmul"
+        android:layout_below="@+id/BTmod"
+        android:layout_toRightOf="@+id/BT9"
+        android:layout_toEndOf="@+id/BT9"
+        android:background="#ff9500"
+        android:textColor="#fff"
+        android:textSize="27dp"
+        android:onClick="onClick"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="match_parent"
+        android:text="     0"
+        android:id="@+id/BT0"
+        android:layout_below="@+id/BT1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:gravity="left|center"
+        android:fontFamily="arial"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:text="."
+        android:id="@+id/BTdot"
+        android:layout_below="@+id/BT3"
+        android:layout_toRightOf="@+id/BT0"
+        android:layout_toEndOf="@+id/BT0"
+        android:background="#c7c7cc"
+        android:textSize="30dp"
+        android:onClick="get"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="-"
+        android:id="@+id/BTsub"
+        android:layout_alignTop="@+id/BT6"
+        android:layout_alignLeft="@+id/BTmul"
+        android:layout_alignStart="@+id/BTmul"
+        android:background="#ff9500"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:onClick="onClick"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:text="+"
+        android:id="@+id/BTadd"
+        android:layout_alignTop="@+id/BT3"
+        android:layout_alignLeft="@+id/BTsub"
+        android:layout_alignStart="@+id/BTsub"
+        android:background="#ff9500"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:onClick="onClick"
+        android:fontFamily="arial" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:text="="
+        android:id="@+id/BTeq"
+        android:layout_below="@+id/BTadd"
+        android:layout_toRightOf="@+id/BTdot"
+        android:layout_toEndOf="@+id/BTdot"
+        android:background="#ff9500"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:onClick="equals"
+        android:fontFamily="arial" />
+
+</RelativeLayout>
